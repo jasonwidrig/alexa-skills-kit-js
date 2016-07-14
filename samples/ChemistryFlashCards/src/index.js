@@ -191,8 +191,8 @@ exports.handler = function (event, context) {
  * Called when the session starts.
  */
 function onSessionStarted(sessionStartedRequest, session) {
-    console.log("onSessionStarted requestId=" + sessionStartedRequest.requestId
-        + ", sessionId=" + session.sessionId);
+    //console.log("onSessionStarted requestId=" + sessionStartedRequest.requestId
+    //    + ", sessionId=" + session.sessionId);
 
     // add any session init logic here
 }
@@ -201,8 +201,8 @@ function onSessionStarted(sessionStartedRequest, session) {
  * Called when the user invokes the skill without specifying what they want.
  */
 function onLaunch(launchRequest, session, callback) {
-    console.log("onLaunch requestId=" + launchRequest.requestId
-        + ", sessionId=" + session.sessionId);
+    //console.log("onLaunch requestId=" + launchRequest.requestId
+    //    + ", sessionId=" + session.sessionId);
 
     getWelcomeResponse(callback);
 }
